@@ -93,6 +93,26 @@ qBuilder.sendQuery(
 );
 ```
 
+Or alternative callback and is more easy to understand:
+
+```
+let params = [{ name: 'extra_flag', value: 1 }];
+
+qBuilder.sendQuery(
+    myFunction,
+    undefined,
+    params,
+    function(err) { console.error('Request failed', err); }
+);
+
+function myFunction(data){
+	//Do Something --
+
+
+}
+
+```
+
 ---
 
 #### `sendPromise(func, customURL, customParams, errorHandler)`
