@@ -95,7 +95,7 @@ qBuilder.sendQuery(
 
 Or alternative callback and is more easy to understand:
 
-```
+```javascript
 let params = [{ name: 'extra_flag', value: 1 }];
 
 qBuilder.sendQuery(
