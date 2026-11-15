@@ -79,7 +79,7 @@ Builds a `FormData` payload from the current state and sends it via `XMLHttpRequ
 
 | Parameter | Type | Default | Description |
 |---|---|---|---|
-| `func` | `function` | `undefined` | Callback invoked on a successful response (`status 200`). Receives the XHR object. |
+| `func` | `function` | `undefined` | Callback invoked on a successful response (`status 200`). Receives the XHR object. You should JSON parse the response Text etc. |
 | `customURL` | `string` | `undefined` | Overrides `server_address` for this request only. |
 | `customParams` | `array` | `[]` | Array of `{ name, value }` or `{ name, data }` objects appended to the payload. |
 | `errorHandler` | `function` | `undefined` | Callback invoked on `status 0` or `status 404`. |
